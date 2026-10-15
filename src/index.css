@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+/* Hide scrollbars for mobile mockup display */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Responsive video embed wrapper */
+.video-reel-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/16;
+  max-height: 680px;
+  border-radius: 16px;
+  overflow: hidden;
+}

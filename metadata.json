@@ -1,0 +1,8 @@
+{
+  "name": "Puerto Yacarey - Fishing Lodge",
+  "description": "Arquitectura UX/UI Mobile-First, redacción luxury y componentes HTML embed para Puerto Yacarey Fishing Lodge en Google Sites.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
