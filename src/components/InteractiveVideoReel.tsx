@@ -11,7 +11,7 @@ interface InteractiveVideoReelProps {
   fallbackImage: string;
   title: string;
   subtitle: string;
-  tag: string;
+  tag?: string;
   embedCode: string;
   isHero?: boolean;
 }
@@ -21,7 +21,6 @@ export const InteractiveVideoReel: React.FC<InteractiveVideoReelProps> = ({
   fallbackImage,
   title,
   subtitle,
-  tag,
   embedCode,
   isHero = false,
 }) => {
@@ -91,10 +90,7 @@ export const InteractiveVideoReel: React.FC<InteractiveVideoReelProps> = ({
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/30 pointer-events-none" />
 
       {/* Top Header Over Video */}
-      <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10 pointer-events-auto">
-        <span className="text-[11px] font-mono tracking-widest uppercase text-amber-200/90 bg-black/40 backdrop-blur-md px-2.5 py-1 rounded border border-amber-200/20">
-          {tag}
-        </span>
+      <div className="absolute top-4 left-4 right-4 flex items-center justify-end z-10 pointer-events-auto">
         <div className="flex items-center gap-2">
           {videoUrl && !hasError && (
             <button
